@@ -6,16 +6,18 @@
 trigger:
 - master
 
-pool:
-  vmImage: 'ubuntu-latest'
+jobs:
+  - job:
+    pool:
+    vmImage: 'ubuntu-latest'
 
-steps:
-- script: |
-    node --version
-    sudo npm i -g @antora/cli@2.3 @antora/site-generator-default@2.3
-    antora version
-  displayName: 'Install antora'
+    steps:
+    - script: |
+        node --version
+        sudo npm i -g @antora/cli@2.3 @antora/site-generator-default@2.3
+        antora version
+      displayName: 'Install antora'
 
-- script: |
-    antora --fetch antora-playbook.yml
-  displayName: 'Run antora'
+    - script: |
+        antora --fetch antora-playbook.yml
+      displayName: 'Run antora'
