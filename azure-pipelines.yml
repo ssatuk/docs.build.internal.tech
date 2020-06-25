@@ -26,3 +26,6 @@ jobs:
         export GIT_CREDENTIALS='https://$(PAT):@github.com'
         antora --fetch antora-playbook.yml
       displayName: 'Run antora'
+
+    - publish: '$(Build.ArtifactStagingDirectory)/site'
+      artifact: 'ssat-tech-docs'
