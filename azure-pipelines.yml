@@ -11,6 +11,6 @@ pool:
 
 steps:
 - script: |
-    npm i -g @antora/cli@2.3 @antora/site-generator-default@2.3
+    sudo npm i -g @antora/cli@2.3 @antora/site-generator-default@2.3
     antora version
   displayName: 'Install antora'
