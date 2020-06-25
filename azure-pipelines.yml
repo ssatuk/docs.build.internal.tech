@@ -6,10 +6,14 @@
 trigger:
 - master
 
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+- group: Credentials
+
 jobs:
   - job:
-    pool:
-    vmImage: 'ubuntu-latest'
 
     steps:
     - script: |
@@ -19,5 +23,6 @@ jobs:
       displayName: 'Install antora'
 
     - script: |
+        export GIT_CREDENTIALS='https://$(PAT):@github.com'
         antora --fetch antora-playbook.yml
       displayName: 'Run antora'
