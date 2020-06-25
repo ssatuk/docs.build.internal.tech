@@ -1,0 +1,18 @@
+site:
+  title: SSAT Digital Services
+  #start_page: component-b::index.adoc 
+  start_page: howto::index.adoc 
+content:
+  sources: 
+  - url: https://github.com/ssatuk/docs.src.learn.internal.git
+    branches: master
+    start_path: tech
+  #- url: https://gitlab.com/antora/demo/demo-component-a.git
+  #  branches: master
+  #- url: https://gitlab.com/antora/demo/demo-component-b.git
+  #  branches: [v2.0, v1.0]
+  #  start_path: docs
+ui: 
+  bundle:
+    url: https://ssatdocsitebuilds.blob.core.windows.net/antora-ui-ssat/ui-bundle.zip
+    snapshot: true
