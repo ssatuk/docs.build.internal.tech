@@ -11,6 +11,7 @@ pool:
 
 steps:
 - script: |
+    sudo curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
     sudo nvm install --lts
     sudo npm i -g @antora/cli@2.3 @antora/site-generator-default@2.3
     antora version
