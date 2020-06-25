@@ -27,5 +27,5 @@ jobs:
         antora --fetch antora-playbook.yml
       displayName: 'Run antora'
 
-    - publish: '$(Build.ArtifactStagingDirectory)/site'
+    - publish: '$(Build.ArtifactStagingDirectory)'
       artifact: 'ssat-tech-docs'
