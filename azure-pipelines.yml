@@ -29,3 +29,18 @@ jobs:
 
     - publish: '$(Build.ArtifactStagingDirectory)'
       artifact: 'ssat-tech-docs'
+
+  - job:
+    steps:
+    - checkout: none  # no need to checkout any code because we only need the artifact
+
+    - download: current
+      artifact: 'ssat-tech-docs'
+
+    - task: AzureRmWebAppDeployment@4
+      inputs:
+        ConnectionType: 'AzureRM'
+        azureSubscription: 'AzureMaster'
+        appType: 'webApp'
+        WebAppName: 'ssattechdocs'
+        packageForLinux: '$(Pipeline.Workspace)/ssat-tech-docs/'
