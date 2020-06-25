@@ -2,10 +2,10 @@ site:
   title: SSAT Digital Services
   #start_page: component-b::index.adoc 
   start_page: elearn::index.adoc 
-content:
-  output:
+output:
     clean: true
     dir: $(Build.ArtifactStagingDirectory)
+content:
   sources: 
   - url: https://github.com/ssatuk/docs.src.learn.internal.git
     branches: master
