@@ -7,6 +7,9 @@ content:
   - url: https://github.com/ssatuk/docs.src.learn.internal.git
     branches: master
     start_path: tech
+  - url: https://github.com/ssatuk/terraform-do-learn.git
+    branches: master
+    start_path: docs
   #- url: https://gitlab.com/antora/demo/demo-component-a.git
   #  branches: master
   #- url: https://gitlab.com/antora/demo/demo-component-b.git
