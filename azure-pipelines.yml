@@ -19,12 +19,13 @@ jobs:
     - script: |
         node --version
         sudo npm i -g @antora/cli@2.3 @antora/site-generator-default@2.3
+        sudo npm i -g antora-site-generator-lunr
         antora version
       displayName: 'Install antora'
 
     - script: |
         export GIT_CREDENTIALS='https://$(PAT):@github.com'
-        antora --fetch --to-dir '$(Build.ArtifactStagingDirectory)' antora-playbook.yml
+        DOCSEARCH_ENABLED=true DOCSEARCH_ENGINE=lunr NODE_PATH="$(npm -g root)" antora --fetch --to-dir '$(Build.ArtifactStagingDirectory)' --generator antora-site-generator-lunr antora-playbook.yml
       displayName: 'Run antora'
 
     - publish: '$(Build.ArtifactStagingDirectory)'
