@@ -1,10 +1,9 @@
 site:
-  title: SSAT Digital Services
-  #start_page: component-b::index.adoc 
-  start_page: elearn::index.adoc 
+  title: SSAT Digital Services Technical Guides
+  start_page: elearntech::index.adoc 
 content:
   sources: 
-  - url: https://github.com/ssatuk/docs.src.learn.internal.git
+  - url: https://github.com/ssatuk/docs.src.learn.git
     branches: master
     start_path: tech
   - url: https://github.com/ssatuk/terraform-do-learn.git
