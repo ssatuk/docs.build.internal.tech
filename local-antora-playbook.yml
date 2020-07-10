@@ -1,13 +1,21 @@
 site:
   title: Antora Docs
   #start_page: component-b::index.adoc 
-  start_page: howto::index.adoc 
+  start_page: docmetatech::index.adoc 
 content:
   sources: 
-  - url: ./workspace/howto
+  - url: ./workspace/docmetatech
+    branches: HEAD
+    start_path: tech
+
+  - url: ./workspace/learn
+    branches: HEAD
+    start_path: tech
+
+  - url: ./workspace/learn-tf
     branches: HEAD
     start_path: docs
 ui: 
   bundle:
-    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/master/raw/build/ui-bundle.zip?job=bundle-stable
+    url: https://ssatdocsitebuilds.blob.core.windows.net/antora-ui-ssat/ui-bundle.zip
     snapshot: true

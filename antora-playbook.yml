@@ -1,8 +1,11 @@
 site:
   title: SSAT Digital Services Technical Guides
-  start_page: elearntech::index.adoc 
+  start_page: docmetatech::index.adoc 
 content:
   sources: 
+  - url: https://github.com/ssatuk/docs.src.documentation.git
+    branches: master
+    start_path: tech
   - url: https://github.com/ssatuk/docs.src.learn.git
     branches: master
     start_path: tech

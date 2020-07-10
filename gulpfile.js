@@ -13,7 +13,7 @@ const playbookFilename = 'local-antora-playbook.yml'
 const playbook = yaml.safeLoad(fs.readFileSync(playbookFilename, 'utf8'))
 const outputDir = (playbook.output || {}).dir || './build/site'
 const serverConfig = { name: 'Preview Site', livereload, port: 5000, root: outputDir }
-const antoraArgs = ['--playbook', playbookFilename]
+const antoraArgs = ['--playbook', playbookFilename, '--generator', 'antora-site-generator-lunr']
 const watchPatterns = playbook.content.sources.filter((source) => !source.url.includes(':')).reduce((accum, source) => {
   accum.push(`${source.url}/${source.start_path ? source.start_path + '/' : ''}antora.yml`)
   accum.push(`${source.url}/${source.start_path ? source.start_path + '/' : ''}**/*.adoc`)
