@@ -4,7 +4,10 @@
 
 const connect = require('gulp-connect')
 const fs = require('fs')
-const generator = require('@antora/site-generator-default')
+//const generator = require('@antora/site-generator-default')
+const generator = require('antora-site-generator-lunr')
+process.env['DOCSEARCH_ENABLED'] = true
+process.env['DOCSEARCH_ENGINE'] = 'lunr'
 const { reload: livereload } = process.env.LIVERELOAD === 'true' ? require('gulp-connect') : {}
 const { series, src, watch } = require('gulp')
 const yaml = require('js-yaml')
