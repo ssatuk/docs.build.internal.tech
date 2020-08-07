@@ -17,6 +17,12 @@ content:
   - url: ./workspace/learn-tf
     branches: HEAD
     start_path: docs
+
+  - url: ./workspace/web
+    branches: HEAD
+    start_path: docs/tech
+    
+
 ui: 
   bundle:
     url: https://ssatdocsitebuilds.blob.core.windows.net/antora-ui-ssat/ui-bundle.zip
