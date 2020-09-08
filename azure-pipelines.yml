@@ -25,6 +25,7 @@ jobs:
 
     - script: |
         export GIT_CREDENTIALS='https://$(PAT):@github.com'
+        export BB_TOKEN='$(BB_TOKEN)'
         sed -i s/\$BB_TOKEN/$BB_TOKEN/ antora-playbook.yml
         DOCSEARCH_ENABLED=true DOCSEARCH_ENGINE=lunr NODE_PATH="$(npm -g root)" antora --fetch --to-dir '$(Build.ArtifactStagingDirectory)' --generator antora-site-generator-lunr antora-playbook.yml
       displayName: 'Run antora'
