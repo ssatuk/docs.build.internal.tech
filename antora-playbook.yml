@@ -15,8 +15,11 @@ content:
   - url: https://github.com/ssatuk/terraform-do-learn.git
     branches: master
     start_path: docs
-  - url:  https://ssatgitbot:$BB_TOKEN@bitbucket.org/ssat/ssat.web.master.git
+  - url:  https://ssatgitbot:tb4wBa5mZ9ScLcrrzXt6@bitbucket.org/ssat/ssat.web.master.git
     branches: docs
+    start_path: docs/tech
+  - url:  https://ssatgitbot:tb4wBa5mZ9ScLcrrzXt6@bitbucket.org/ssat/ssat.flows.team.git
+    branches: master
     start_path: docs/tech
   #- url: https://gitlab.com/antora/demo/demo-component-a.git
   #  branches: master

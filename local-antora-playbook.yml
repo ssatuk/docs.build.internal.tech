@@ -22,6 +22,9 @@ content:
     branches: HEAD
     start_path: docs/tech
     
+  - url: ./workspace/flows
+    branches: HEAD
+    start_path: docs/tech
 
 ui: 
   bundle:
