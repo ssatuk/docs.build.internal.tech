@@ -26,6 +26,10 @@ content:
     branches: HEAD
     start_path: docs/tech
 
+  - url: ./workspace/processes
+    branches: HEAD
+    start_path: tech
+
 ui: 
   bundle:
     url: https://ssatdocsitebuilds.blob.core.windows.net/antora-ui-ssat/ui-bundle.zip

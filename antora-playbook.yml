@@ -21,6 +21,9 @@ content:
   - url:  https://ssatgitbot:tb4wBa5mZ9ScLcrrzXt6@bitbucket.org/ssat/ssat.flows.team.git
     branches: master
     start_path: docs/tech
+  - url: git@github.com:ssatuk/docs.src.processes.git
+    branches: master
+    start_path: tech
   #- url: https://gitlab.com/antora/demo/demo-component-a.git
   #  branches: master
   #- url: https://gitlab.com/antora/demo/demo-component-b.git
