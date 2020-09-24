@@ -30,6 +30,10 @@ content:
     branches: HEAD
     start_path: tech
 
+  - url: ./workspace/xrm2xero
+    branches: HEAD
+    start_path: docs/tech
+
 ui: 
   bundle:
     url: https://ssatdocsitebuilds.blob.core.windows.net/antora-ui-ssat/ui-bundle.zip

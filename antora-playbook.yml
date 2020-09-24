@@ -24,6 +24,9 @@ content:
   - url: git@github.com:ssatuk/docs.src.processes.git
     branches: master
     start_path: tech
+  - url:  git@github.com:ssatuk/Xrm2Xero.git
+    branches: master
+    start_path: docs/tech
   #- url: https://gitlab.com/antora/demo/demo-component-a.git
   #  branches: master
   #- url: https://gitlab.com/antora/demo/demo-component-b.git
