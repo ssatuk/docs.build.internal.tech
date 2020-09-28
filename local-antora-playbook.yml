@@ -32,7 +32,7 @@ content:
 
   - url: ./workspace/xrm2xero
     branches: HEAD
-    start_path: docs/tech
+    start_path: doc/tech
 
 ui: 
   bundle:
