@@ -27,6 +27,9 @@ content:
   - url:  git@github.com:ssatuk/Xrm2Xero.git
     branches: master
     start_path: doc/tech
+  - url: https://ssatgitbot:tb4wBa5mZ9ScLcrrzXt6@bitbucket.org/ssat/ssat.xrm.apps.tm.git
+    branches: master
+    start_path: docs/tech
   #- url: https://gitlab.com/antora/demo/demo-component-a.git
   #  branches: master
   #- url: https://gitlab.com/antora/demo/demo-component-b.git

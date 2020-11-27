@@ -33,6 +33,10 @@ content:
   - url: ./workspace/xrm2xero
     branches: HEAD
     start_path: doc/tech
+  
+  - url: ./workspace/ssat.xrm.apps.tm
+    branches: HEAD
+    start_path: docs/tech
 
 ui: 
   bundle:
