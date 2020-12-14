@@ -33,6 +33,9 @@ content:
   - url: git@github.com:ssatuk/docs.src.bi.git
     branches: master
     start_path: tech
+  - url: git@github.com:ssatuk/SSAT.EAI.MarketingAutomation.git
+    branches: master
+    start_path: doc/tech
   #- url: https://gitlab.com/antora/demo/demo-component-a.git
   #  branches: master
   #- url: https://gitlab.com/antora/demo/demo-component-b.git

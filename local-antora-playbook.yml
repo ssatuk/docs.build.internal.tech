@@ -43,7 +43,9 @@ content:
     branches: HEAD
     start_path: tech
 
-
+  - url: ./workspace/ma
+    branches: HEAD
+    start_path: doc/tech
 
 ui: 
   bundle:
