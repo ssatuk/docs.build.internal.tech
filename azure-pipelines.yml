@@ -30,6 +30,10 @@ jobs:
         DOCSEARCH_ENABLED=true DOCSEARCH_ENGINE=lunr NODE_PATH="$(npm -g root)" antora --fetch --to-dir '$(Build.ArtifactStagingDirectory)' --generator antora-site-generator-lunr antora-playbook.yml
       displayName: 'Run antora'
 
+   
+    - script: |
+        cp ./web.config $(Build.ArtifactStagingDirectory)
+
     - publish: '$(Build.ArtifactStagingDirectory)'
       artifact: 'ssat-tech-docs'
 
