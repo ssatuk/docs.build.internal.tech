@@ -30,6 +30,9 @@ content:
   - url: https://ssatgitbot:tb4wBa5mZ9ScLcrrzXt6@bitbucket.org/ssat/ssat.xrm.apps.tm.git
     branches: master
     start_path: docs/tech
+  - url: https://ssatgitbot:tb4wBa5mZ9ScLcrrzXt6@bitbucket.org/ssat/ssat.xrm.code.membership.git
+    branches: master
+    start_path: docs/tech
   - url: git@github.com:ssatuk/docs.src.bi.git
     branches: master
     start_path: tech

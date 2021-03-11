@@ -47,6 +47,10 @@ content:
     branches: HEAD
     start_path: doc/tech
 
+  - url: ./workspace/ssat.xrm.code.membership
+    branches: HEAD
+    start_path: docs/tech
+
 ui: 
   bundle:
     url: https://ssatdocsitebuilds.blob.core.windows.net/antora-ui-ssat/ui-bundle.zip
