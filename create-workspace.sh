@@ -34,3 +34,4 @@ create_sparse_clone ssat.xrm.apps.tm  git@bitbucket.org:ssat/ssat.xrm.apps.tm.gi
 create_sparse_clone web   https://ssatgitbot:tb4wBa5mZ9ScLcrrzXt6@bitbucket.org/ssat/ssat.web.master.git docs docs
 create_sparse_clone xrm2xero git@github.com:ssatuk/Xrm2Xero.git doc
 create_sparse_clone ssat.xrm.code.membership git@bitbucket.org:ssat/ssat.xrm.code.membership.git docs/tech
+create_sparse_clone ssat.xrm.code.general git@bitbucket.org:ssat/ssat.xrm.code.general.git docs/tech

@@ -2,20 +2,20 @@
 
 This repository contains an Antora plybook that builds our internal technical documentation.
 
-All instructions assume you are using bash or git-bash shell
+All instructions assume you are using bash, git-bash or PowerShell as your shell
 
 ## Local build and test
-1. in the root of this repo run `./create-workspace.sh`
+1. in the root of this repo run `./create-workspace.sh` or `./create-workspace.ps1` depending which shell you are running
 2. in the root of this repo run `npm install`
 3.  `gulp` to create a live preview site
 4.  read the file `local-antora-playbook.yml` to see which local folder corresponds to which document section
 ## Adding a remote document source
 ### for local editing 
-1. edit `create-workspace.sh`, add relevant line for your remote document source
-2. run `./create-workspace.sh`
+1. edit `create-workspace.sh` and `./create-workspace.ps1` , add relevant line for your remote document source
+2. run `./create-workspace.sh` or `./create-workspace.ps1` depending which shell you are running
 3. edit `local-antora-playbook.yml`
 4. REMEMBER to commit and push the changed `./create-workspace.sh` and `local-antora-playbook.yml`
-5. in the root of this repo run `npm install` follwed by `gulp` to create a live preview site
+5. in the root of this repo run `npm install` followed by `gulp` to create a live preview site
 6. edit local copy of relevant docs
 7. when done, `cd workspace/<thedocfolder>`
 8. git add, commit and push any changes
